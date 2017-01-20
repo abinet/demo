@@ -14,7 +14,7 @@ import java.util.List;
  * Created by abinetsky on 20.01.17.
  */
 @FeignClient(name="aaa", url="localhost:8080")
-public interface TestClient {
+public interface RestClient {
 
     @RequestMapping(method = RequestMethod.GET, value = "/sticks/search/findByIdIn")
     String sticks(@RequestParam("ids") List<Long> ids);

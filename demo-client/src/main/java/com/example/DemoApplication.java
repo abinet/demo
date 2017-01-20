@@ -11,7 +11,7 @@ import org.springframework.cloud.netflix.feign.EnableFeignClients;
 @EnableFeignClients
 public class DemoApplication {
 	@Autowired
-	TestClient testClient;
+	RestClient testClient;
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
